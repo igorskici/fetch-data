@@ -1,0 +1,23 @@
+<div class="container-fluid">
+        <table class="table table-striped">
+            <thead>
+                <th>Id</th>
+                <th>Username</th>
+                <th>Gender</th>
+                <th>Created</th>
+               
+            </thead>
+        <tbody>
+            <tr *ngFor="let user of users">
+             <td>{{user.id}}</td>
+             <td>{{user.username}}</td>
+             <td>{{user.gender}}</td>
+             <td>{{user.created | date :'shortTime' }}</td>
+            </tr>
+        </tbody>
+        </table>
+    </div>
+
+
+
+    
